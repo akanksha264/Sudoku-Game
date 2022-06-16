@@ -67,6 +67,8 @@ bool Sudoku::solve(int r , int c)
             board[r][c]=0;
         }       
     }
+    
+    return 0;
 }
 
 bool Sudoku::isValid(int row , int col , int val)
