@@ -72,12 +72,12 @@ bool Sudoku::solve(int r , int c)
 bool Sudoku::isValid(int row , int col , int val)
 {
     //Checking the row
-    for(int i=col+1 ; i<n ; i++)
+    for(int i=0 ; i<n ; i++)
         if(board[row][i]==val)
             return false;
 
     //Checking the column
-    for(int i=row+1 ; i<n ; i++)
+    for(int i=0 ; i<n ; i++)
         if(board[i][col]==val)
             return false;
 
