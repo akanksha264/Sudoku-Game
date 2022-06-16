@@ -22,7 +22,7 @@ class Sudoku
     public:
         Sudoku(){
             n=9;
-            vector<int> row(n,'.');
+            vector<int> row(n,0);
             for(int i=0 ; i<n ; i++)
                 board.push_back(row);
         }
